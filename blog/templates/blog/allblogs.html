@@ -81,7 +81,7 @@
   <a href="{% url 'detail' blog.id %}"><h3>{{ blog.title }}</h3></a>
   {{ blog.pub_date_pretty }}
   <br />
-  <img class="img-fuid" src="{{ blog.image.url }}" height=200 width=200 />
+  <img class="img-fuid" src="{{ blog.image.url }}" height=100 width=100 />
   <br />
   <p>{{ blog.summary }}</p>
   {% endfor %}
