@@ -7,12 +7,12 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Daniel's Blog</title>
+    <title>Daniel's Certificates</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
 
     <!-- Bootstrap core CSS -->
-<<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -57,10 +57,10 @@
               <a class="nav-link" href="http://github.com/squiresstewart">Github</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% static 'DanielSquires.pdf' %}">Resume</a>
+              <a class="nav-link" href="{% static 'Danielsquires.pdf' %}">Resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="{% url 'allblogs' %}">Blog</a>
+              <a class="nav-link active" href="{% url 'allblogs' %}">Certificates</a>
             </li>
           </ul>
         </div>
@@ -70,21 +70,43 @@
 <main role="main">
   <div class="container">
 
-  <h1 class="text-center pt-3">Welcome to Danny's Blog</h1>
+  <h1 class="text-center pt-3">Awarded Certificates</h1>
   <br />
   <br />
-  <h2>Latest Posts</h2>
+  <h2></h2>
   <hr />
+  <div class="row">
+  <div class="col-md-6">
+    <div class="card mb-6 shadow-sm">
+      <a class="nav-link" href="{% static 'python.pdf' %}">
+      <img class="card-img-top" src="{% static 'python.png' %}">
+      <div class="card-body">
 
+      </div>
+    </div>
+    </a>
+  </div>
 
-  {% for blog in blogs.all %}
+  <div class="col-md-6">
+    <div class="card mb-6 shadow-sm">
+      <a class="nav-link" href="{% static 'django.pdf' %}">
+      <img class="card-img-top" src="{% static 'django.png' %}">
+      <div class="card-body">
+
+      </div>
+    </div>
+    </a>
+  </div>
+</div>
+
+  <!-- {% for blog in blogs.all %}
   <a href="{% url 'detail' blog.id %}"><h3>{{ blog.title }}</h3></a>
   {{ blog.pub_date_pretty }}
   <br />
   <img class="img-fuid" src="{{ blog.image.url }}" height=100 width=100 />
   <br />
   <p>{{ blog.summary }}</p>
-  {% endfor %}
+  {% endfor %} -->
 
 </div>
 
